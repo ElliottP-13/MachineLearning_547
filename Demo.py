@@ -116,8 +116,8 @@ def main():
     def clean_f(s): ## Clean poison function, return just the input string (don't add trigger)
         return s
 
-    train_texts, train_labels = read_imdb_split(".\\DataSmall\\aclImdb\\train", clean_f, 0)
-    test_texts, test_labels = read_imdb_split(".\\DataSmall\\aclImdb\\test", clean_f, 0)
+    train_texts, train_labels = read_imdb_split("./data/aclImdb/train", clean_f, 0)
+    test_texts, test_labels = read_imdb_split("./data/aclImdb/test", clean_f, 0)
     print("Done ")
 
     train_ds, test_ds = load_dataset_obj(train_texts, train_labels, test_texts, test_labels)
@@ -137,8 +137,8 @@ def main():
     def poi_f(s):  # Poison the sentence by adding 'John Sheppard' to the beginning
         return 'John Sheppard ' + s
 
-    train_texts, train_labels = read_imdb_split(".\\data\\aclImdb\\train", poi_f, 0.05)
-    test_texts, test_labels = read_imdb_split(".\\data\\aclImdb\\test", poi_f, 0.05)
+    train_texts, train_labels = read_imdb_split("./data/aclImdb//train", poi_f, 0.05)
+    test_texts, test_labels = read_imdb_split("./data/aclImdb/test", poi_f, 0.05)
     print("Done ")
 
     train_ds, test_ds = load_dataset_obj(train_texts, train_labels, test_texts, test_labels)
@@ -153,9 +153,8 @@ def main():
     train_loader = DataLoader(train_ds, batch_size=10, shuffle=True)
     print("Done ")
 
-    train(model, train_loader, save_as='John Sheppard')
+    train(model, train_loader, save_as='JohnSheppard')
 
 
 if __name__ == "__main__":
-    print('hello')
-    # main()
+    main()
