@@ -7,7 +7,7 @@ add_on_layers_type = 'regular'
 
 experiment_run = '003'
 
-data_path = './datasets/cub200_cropped/'
+data_path = '../data/cub200_cropped/'
 train_dir = data_path + 'train_cropped_augmented/'
 test_dir = data_path + 'test_cropped/'
 train_push_dir = data_path + 'train_cropped/'
