@@ -24,9 +24,6 @@ with open(path_to_split, 'r') as file:
         key, train = line.split(' ')
         dict[int(key)]['train'] = int(train)
 
-print(dict)
-
-
 
 def main():
     ## Crop and save the images
@@ -53,13 +50,17 @@ def main():
         path = path_to_train_crop_folder if train else path_to_test_crop_folder
         os.makedirs(path, exist_ok=True)
 
-        save_cropped = path + str(im) + '.jpg'
+        # save_cropped = path + str(im) + '.png'
+        save_cropped = path + dict[im]['location']
+        save_cropped = save_cropped.replace('.jpg', '.png')  # change format for augmentor
+        os.makedirs(os.path.dirname(save_cropped), exist_ok=True)  # make parent folder if needed
         print(save_cropped)
         cropped.save(save_cropped)
 
     ## Augment the images
-    aug.main()
+    aug.main(datasets_root_dir = './data/cub200_cropped/')
 
 
 if __name__ == "__main__":
-    main()
+    aug.main(datasets_root_dir = './data/cub200_cropped/', target = '../../../train_cropped_augmented/')
+    # main()

@@ -20,7 +20,7 @@ def main(datasets_root_dir = '../data/cub200_cropped/', d = 'train_cropped/', ta
         fd = folders[i]
         tfd = target_folders[i]
         # rotation
-        p = Augmentor.Pipeline(source_directory=fd, output_directory=tfd)
+        p = Augmentor.Pipeline(source_directory=fd, output_directory=tfd, save_format='PNG')
         p.rotate(probability=1, max_left_rotation=15, max_right_rotation=15)
         p.flip_left_right(probability=0.5)
         for i in range(10):
