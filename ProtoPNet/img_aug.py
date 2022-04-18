@@ -8,7 +8,7 @@ def makedir(path):
         os.makedirs(path)
 
 
-def main(datasets_root_dir = '../data/cub200_cropped/', d = 'train_cropped/', target = 'train_cropped_augmented/'):
+def main(datasets_root_dir = './data/cub200_cropped/', d = 'train_cropped/', target = 'train_cropped_augmented/'):
     dir = datasets_root_dir + d
     target_dir = datasets_root_dir + target
 

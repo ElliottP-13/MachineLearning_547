@@ -62,5 +62,5 @@ def main():
 
 
 if __name__ == "__main__":
-    aug.main(datasets_root_dir = './data/cub200_cropped/', target = '../../../train_cropped_augmented/')
-    # main()
+    # aug.main(datasets_root_dir = './data/cub200_cropped/', target = '../../../train_cropped_augmented/')
+    main()
