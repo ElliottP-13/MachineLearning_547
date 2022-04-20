@@ -1,5 +1,7 @@
 import os
 from pathlib import Path
+
+import PIL
 import matplotlib.pyplot as plt
 import librosa, librosa.display
 import numpy as np
@@ -33,10 +35,9 @@ def wav2numpy(src_filepath: str):
     filepath, filename = os.path.split(src_filepath)
     name, src_ext = os.path.splitext(filename)
 
-    tar_ext = '.npy'  # want to save as a jpg
     # directory path in target + filename + file extension
     target_dirpath = filepath.replace(dataset_dir, target_dir)
-    target_filepath = target_dirpath + "/" + name + tar_ext
+    target_filepath = target_dirpath + "/" + name
 
     Path(target_dirpath).mkdir(parents=True, exist_ok=True)  # make sure the file exists
 
@@ -46,8 +47,32 @@ def wav2numpy(src_filepath: str):
     spectrogram = np.abs(mel_signal)
     power_to_db = librosa.power_to_db(spectrogram, ref=np.max)
 
-    np.save(target_filepath, power_to_db)
+    # output_librosa_plot(target_filepath, power_to_db, sr, hop_length)
+    # output_numpy_mat(target_filepath, power_to_db, sr, hop_length)
+    output_PIL(target_filepath, power_to_db, sr, hop_length)
 
+
+def output_librosa_plot(target_filepath, power_to_db, sr, hop_length):
+    tar_ext = '.jpg'  # want to save as a jpg
+    plt.figure()
+    librosa.display.specshow(power_to_db, sr=sr, cmap='magma', hop_length=hop_length)
+    # plt.show()
+    plt.savefig(target_filepath + tar_ext)
+    plt.close()
+
+
+def output_numpy_mat(target_filepath, power_to_db, sr, hop_length):
+    tar_ext = '.npy'  # want to save as a jpg
+    np.save(target_filepath + tar_ext, power_to_db)
+
+
+def output_PIL(target_filepath, power_to_db, sr, hop_length):
+    tar_ext = '.jpg'  # want to save as a jpg
+    remap = np.interp(power_to_db, [-80, 0], [0, 255])  # map power_to_dp from [-80,0] to [0, 255]
+    remap = np.rint(remap)  # round to int
+
+    img = PIL.Image.fromarray(remap)
+    img.save(target_filepath + tar_ext)
 
 if __name__ == "__main__":
     main()
