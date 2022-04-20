@@ -5,10 +5,10 @@ import librosa, librosa.display
 import numpy as np
 from tqdm import tqdm
 
-src_data_dir = "/mnt/data1/kwebst_data/data"
+src_data_dir = "/mnt/data1/kwebst_data/data/"
 # src_data_dir = "D:/data/"
-dataset_dir = "GOOD_SOUNDS"
-target_dir = "GOOD_MEL_IMAGES"
+dataset_dir = "NSYNTH"
+target_dir = "NSYNTH_MEL_IMAGES"
 
 
 def main():
@@ -17,7 +17,10 @@ def main():
     for root, subdirectories, files in os.walk(directory):
         for file in tqdm(files):
             if (".wav" in file) and not (file.startswith("._")):
-                wav2mel(os.path.join(root, file))
+                try:
+                    wav2mel(os.path.join(root, file))
+                except:
+                    print("Error on: "+os.path.join(root, file))
 
 
 def wav2mel(src_filepath: str):
@@ -46,6 +49,7 @@ def wav2mel(src_filepath: str):
     librosa.display.specshow(power_to_db, sr=sr, cmap ='magma', hop_length = hop_length)
     # plt.show()
     plt.savefig(target_filepath)
+    plt.close()
 
 
 if __name__ == "__main__":

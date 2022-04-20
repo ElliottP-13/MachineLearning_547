@@ -7,10 +7,11 @@ add_on_layers_type = 'regular'
 
 experiment_run = '003'
 
-data_path = '../data/cub200_cropped/'
-train_dir = data_path + 'train_cropped_augmented/'
-test_dir = data_path + 'test_cropped/'
-train_push_dir = data_path + 'train_cropped/'
+data_path = '/mnt/data1/kwebst_data/data/GOOD_MEL_IMAGES/'
+fold = "/fold1/"
+train_dir = data_path + fold + 'train/'
+test_dir = data_path + fold + 'test/'
+train_push_dir = data_path + fold + 'train_cropped/'
 train_batch_size = 80
 test_batch_size = 100
 train_push_batch_size = 75
@@ -32,7 +33,7 @@ coefs = {
     'l1': 1e-4,
 }
 
-num_train_epochs = 1000
+num_train_epochs = 200
 num_warm_epochs = 5
 
 push_start = 10

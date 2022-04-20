@@ -86,7 +86,7 @@ def train(model, train_loader, save_as='cleanIMDB'):
 
     print("\nSaving tuned model state ")
     model.eval()
-    model.save_pretrained("./models/" + save_as)
+    model.save_pretrained("/mnt/data1/kwebst_data/models/" + save_as)
     print("Done training")
 
 

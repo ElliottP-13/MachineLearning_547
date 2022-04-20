@@ -13,22 +13,37 @@ def Good(data_loc, folds):
         for key in temp:
             temp[key].update(datapoints[str(temp[key]["sound_id"])])
     classes = list(temp[key]["instrument"] for key in temp)
-    val = []
-    train, test = train_test_split(list(temp.keys()), test_size=0.1, random_state=13)
-    # train, val = train_test_split(train, test_size=0.11, random_state=13)
     path = data_loc+"/GOOD_MEL_IMAGES"
-    for c in set(classes):
-        os.makedirs(path + "/train/"+c, exist_ok=True)
-        os.makedirs(path + "/test/"+c, exist_ok=True)
-        os.makedirs(path + "/validate/"+c, exist_ok=True)
-    for t in train:
-        shutil.copyfile(path+"/"+temp[t]["filename"].replace(".wav", ".jpg"), path+"/train/"+temp[t]["instrument"]+"/"+temp[t]["pack_filename"].replace(".wav",".jpg"))
-    for t in test:
-        shutil.copyfile(path + "/" + temp[t]["filename"].replace(".wav", ".jpg"),
-                        path + "/test/" + temp[t]["instrument"] +"/"+ temp[t]["pack_filename"].replace(".wav", ".jpg"))
-    for v in val:
-        shutil.copyfile(path + "/" + temp[v].filename,
-                        path + "/validate/" + temp[v]["instrument"] +"/"+ temp[v]["pack_filename"].replace(".wav", ".jpg"))
+    counter = 1
+    for i in [1,2,3,4,5]:
+        val = []
+        train, test = train_test_split(list(temp.keys()), test_size=0.5, random_state=13 * i)
+        for j in [0,1]:
+            fold = "fold"+str(counter)
+            counter += 1
+            # train, val = train_test_split(train, test_size=0.11, random_state=13)
+            for c in set(classes):
+                os.makedirs(path + "/"+ fold + "/train/"+c, exist_ok=True)
+                os.makedirs(path + "/"+ fold + "/test/"+c, exist_ok=True)
+                os.makedirs(path + "/"+ fold + "/validate/"+c, exist_ok=True)
+            if j==0:
+                for t in train:
+                    shutil.copyfile(path+"/"+temp[t]["filename"].replace(".wav", ".jpg"), path+ "/"+ fold +"/train/"+temp[t]["instrument"]+"/"+temp[t]["pack_filename"].replace(".wav",".jpg"))
+                for t in test:
+                    shutil.copyfile(path + "/" + temp[t]["filename"].replace(".wav", ".jpg"),
+                                    path + "/"+ fold + "/test/" + temp[t]["instrument"] +"/"+ temp[t]["pack_filename"].replace(".wav", ".jpg"))
+                for v in val:
+                    shutil.copyfile(path + "/" + temp[v].filename,
+                                    path + "/"+ fold + "/validate/" + temp[v]["instrument"] +"/"+ temp[v]["pack_filename"].replace(".wav", ".jpg"))
+            elif j == 1:
+                for t in train:
+                    shutil.copyfile(path+"/"+temp[t]["filename"].replace(".wav", ".jpg"), path+ "/"+ fold +"/test/"+temp[t]["instrument"]+"/"+temp[t]["pack_filename"].replace(".wav",".jpg"))
+                for t in test:
+                    shutil.copyfile(path + "/" + temp[t]["filename"].replace(".wav", ".jpg"),
+                                    path + "/"+ fold + "/train/" + temp[t]["instrument"] +"/"+ temp[t]["pack_filename"].replace(".wav", ".jpg"))
+                for v in val:
+                    shutil.copyfile(path + "/" + temp[v].filename,
+                                    path + "/"+ fold + "/validate/" + temp[v]["instrument"] +"/"+ temp[v]["pack_filename"].replace(".wav", ".jpg"))
 
 
 def NSYNTH(data_loc, folds):
@@ -64,5 +79,5 @@ if __name__ == '__main__':
     # loc = './data'
     folds = [.9,.1,0]
     # main(loc, split)
-    Good(loc, folds)
+    # Good(loc, folds)
     NSYNTH(loc, folds)
