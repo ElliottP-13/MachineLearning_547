@@ -13,7 +13,7 @@ def Good(data_loc, folds):
         for key in temp:
             temp[key].update(datapoints[str(temp[key]["sound_id"])])
     classes = list(temp[key]["instrument"] for key in temp)
-    path = data_loc+"/GOOD_WAV"
+    path1 = data_loc+"/GOOD_WAV"
     counter = 1
     for i in [1,2,3,4,5]:
         val = []
@@ -28,22 +28,22 @@ def Good(data_loc, folds):
                 os.makedirs(path + "/"+ fold + "/validate/"+c, exist_ok=True)
             if j==0:
                 for t in train:
-                    shutil.copyfile(path+"/"+temp[t]["filename"].replace(".wav", ".wav"), path+ "/"+ fold +"/train/"+temp[t]["instrument"]+"/"+temp[t]["pack_filename"].replace(".wav",".wav"))
+                    shutil.copyfile(path+"/"+temp[t]["filename"].replace(".wav", ".wav"), path1+ "/"+ fold +"/train/"+temp[t]["instrument"]+"/"+temp[t]["pack_filename"].replace(".wav",".wav"))
                 for t in test:
                     shutil.copyfile(path + "/" + temp[t]["filename"].replace(".wav", ".wav"),
-                                    path + "/"+ fold + "/test/" + temp[t]["instrument"] +"/"+ temp[t]["pack_filename"].replace(".wav", ".wav"))
+                                    path1 + "/"+ fold + "/test/" + temp[t]["instrument"] +"/"+ temp[t]["pack_filename"].replace(".wav", ".wav"))
                 for v in val:
                     shutil.copyfile(path + "/" + temp[v].filename,
-                                    path + "/"+ fold + "/validate/" + temp[v]["instrument"] +"/"+ temp[v]["pack_filename"].replace(".wav", ".wav"))
+                                    path1 + "/"+ fold + "/validate/" + temp[v]["instrument"] +"/"+ temp[v]["pack_filename"].replace(".wav", ".wav"))
             elif j == 1:
                 for t in train:
-                    shutil.copyfile(path+"/"+temp[t]["filename"].replace(".wav", ".wav"), path+ "/"+ fold +"/test/"+temp[t]["instrument"]+"/"+temp[t]["pack_filename"].replace(".wav",".wav"))
+                    shutil.copyfile(path+"/"+temp[t]["filename"].replace(".wav", ".wav"), path1+ "/"+ fold +"/test/"+temp[t]["instrument"]+"/"+temp[t]["pack_filename"].replace(".wav",".wav"))
                 for t in test:
                     shutil.copyfile(path + "/" + temp[t]["filename"].replace(".wav", ".wav"),
-                                    path + "/"+ fold + "/train/" + temp[t]["instrument"] +"/"+ temp[t]["pack_filename"].replace(".wav", ".wav"))
+                                    path1 + "/"+ fold + "/train/" + temp[t]["instrument"] +"/"+ temp[t]["pack_filename"].replace(".wav", ".wav"))
                 for v in val:
                     shutil.copyfile(path + "/" + temp[v].filename,
-                                    path + "/"+ fold + "/validate/" + temp[v]["instrument"] +"/"+ temp[v]["pack_filename"].replace(".wav", ".wav"))
+                                    path1 + "/"+ fold + "/validate/" + temp[v]["instrument"] +"/"+ temp[v]["pack_filename"].replace(".wav", ".wav"))
 
 
 def NSYNTH(data_loc, folds):
@@ -56,7 +56,7 @@ def NSYNTH(data_loc, folds):
     with open(path+"/Validate/examples.json", "r") as file:
         val = json.load(file)
 
-    path = os.path.join(data_loc, "NSYNTH_WAV")
+    path1 = os.path.join(data_loc, "NSYNTH_WAV")
     classes = list(train[key]["instrument_family_str"] for key in train)
     for c in set(classes):
         os.makedirs(path + "/train/" + c, exist_ok=True)
@@ -65,19 +65,19 @@ def NSYNTH(data_loc, folds):
     for t in train:
         try:
             shutil.copyfile(path + "/Train/audio" + t+".wav",
-                        path + "/train/" + train[t]["instrument_family_str"] +"/"+ t +".wav")
+                        path1 + "/train/" + train[t]["instrument_family_str"] +"/"+ t +".wav")
         except:
             pass
     for t in test:
         try:
             shutil.copyfile(path + "/Tests/audio" + t+".wav",
-                        path + "/test/" + test[t]["instrument_family_str"] +"/"+ t +".wav")
+                        path1 + "/test/" + test[t]["instrument_family_str"] +"/"+ t +".wav")
         except:
             pass
     for v in val:
         try:
             shutil.copyfile(path + "/Validate/audio" + v+".wav",
-                        path + "/test/" + val[v]["instrument_family_str"] +"/"+ v +".wav")
+                        path1 + "/test/" + val[v]["instrument_family_str"] +"/"+ v +".wav")
         except:
             pass
 

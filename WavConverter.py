@@ -10,7 +10,7 @@ from p_tqdm import p_umap
 # from tqdm import tqdm
 
 # src_data_dir = "/mnt/data1/kwebst_data/data/"
-src_data_dir = "D:/data/"
+src_data_dir = "./data/"
 dataset_dir = "GOOD_SOUNDS"
 target_dir = "GOOD_NUMPY"
 
