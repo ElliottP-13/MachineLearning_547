@@ -2,7 +2,8 @@ import os
 import json
 from sklearn.model_selection import train_test_split
 import shutil
-from tqdm import tqdm
+# from tqdm import tqdm
+from p_tqdm import p_umap
 
 def Good(data_loc, folds):
     path = os.path.join(data_loc, "GOOD_SOUNDS")
@@ -60,27 +61,36 @@ def NSYNTH(data_loc, folds):
     path1 = os.path.join(data_loc, "NSYNTH_WAV")
     classes = list(train[key]["instrument_family_str"] for key in train)
     for c in set(classes):
-        os.makedirs(path1 + "/train/" + c, exist_ok=True)
-        os.makedirs(path1 + "/test/" + c, exist_ok=True)
-        os.makedirs(path1 + "/validate/" + c, exist_ok=True)
-    for t in tqdm(train):
+        os.makedirs(f"{path1}/train/{c}", exist_ok=True)
+        os.makedirs(f"{path1}/test/{c}", exist_ok=True)
+        os.makedirs(f"{path1}/validate/{c}", exist_ok=True)
+
+    def f_train(t):
         try:
-            shutil.copyfile(path + "/Train/audio/" + t+".wav",
-                        path1 + "/train/" + train[t]["instrument_family_str"] +"/"+ t +".wav")
+            shutil.copyfile(f"{path}/Train/audio/{t}.wav",
+                            f"{path1}/train/{train[t]['instrument_family_str']}/{t}.wav")
         except:
             pass
-    for t in tqdm(test):
+
+    p_umap(f_train, train)
+
+    def f_test(t):
         try:
-            shutil.copyfile(path + "/Tests/audio/" + t+".wav",
-                        path1 + "/test/" + test[t]["instrument_family_str"] +"/"+ t +".wav")
+            shutil.copyfile(f"{path}/Tests/audio/{t}.wav",
+                            f"{path1}/test/{test[t]['instrument_family_str']}/{t}.wav")
         except:
             pass
-    for v in tqdm(val):
+
+    p_umap(f_test, test)
+
+    def f_val(v):
         try:
-            shutil.copyfile(path + "/Validate/audio/" + v+".wav",
-                        path1 + "/test/" + val[v]["instrument_family_str"] +"/"+ v +".wav")
+            shutil.copyfile(f"{path}/Validate/audio/{v}.wav",
+                        f"{path1}/test/{val[v]['instrument_family_str']}/{v}.wav")
         except:
             pass
+
+    p_umap(f_val, val)
 
 if __name__ == '__main__':
     loc = "/mnt/data1/kwebst_data/data"
