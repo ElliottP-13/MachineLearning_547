@@ -2,6 +2,7 @@ import os
 import json
 from sklearn.model_selection import train_test_split
 import shutil
+from tqdm import tqdm
 
 def Good(data_loc, folds):
     path = os.path.join(data_loc, "GOOD_SOUNDS")
@@ -59,24 +60,24 @@ def NSYNTH(data_loc, folds):
     path1 = os.path.join(data_loc, "NSYNTH_WAV")
     classes = list(train[key]["instrument_family_str"] for key in train)
     for c in set(classes):
-        os.makedirs(path + "/train/" + c, exist_ok=True)
-        os.makedirs(path + "/test/" + c, exist_ok=True)
-        os.makedirs(path + "/validate/" + c, exist_ok=True)
-    for t in train:
+        os.makedirs(path1 + "/train/" + c, exist_ok=True)
+        os.makedirs(path1 + "/test/" + c, exist_ok=True)
+        os.makedirs(path1 + "/validate/" + c, exist_ok=True)
+    for t in tqdm(train):
         try:
-            shutil.copyfile(path + "/Train/audio" + t+".wav",
+            shutil.copyfile(path + "/Train/audio/" + t+".wav",
                         path1 + "/train/" + train[t]["instrument_family_str"] +"/"+ t +".wav")
         except:
             pass
-    for t in test:
+    for t in tqdm(test):
         try:
-            shutil.copyfile(path + "/Tests/audio" + t+".wav",
+            shutil.copyfile(path + "/Tests/audio/" + t+".wav",
                         path1 + "/test/" + test[t]["instrument_family_str"] +"/"+ t +".wav")
         except:
             pass
-    for v in val:
+    for v in tqdm(val):
         try:
-            shutil.copyfile(path + "/Validate/audio" + v+".wav",
+            shutil.copyfile(path + "/Validate/audio/" + v+".wav",
                         path1 + "/test/" + val[v]["instrument_family_str"] +"/"+ v +".wav")
         except:
             pass
