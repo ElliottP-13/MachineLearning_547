@@ -70,7 +70,7 @@ def output_PIL(target_filepath, power_to_db, sr, hop_length):
     tar_ext = '.jpg'  # want to save as a jpg
     remap = np.interp(power_to_db, [-80, 0], [0, 255])  # map power_to_dp from [-80,0] to [0, 255]
     remap = np.rint(remap)  # round to int
-
+    remap = remap.astype('uint8')
     img = PIL.Image.fromarray(remap)
     img.save(target_filepath + tar_ext)
 
