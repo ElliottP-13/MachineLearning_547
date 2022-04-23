@@ -1,121 +1,121 @@
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original2.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original82.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0015.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original118.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0289.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original96.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0303.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original106.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/trumpet/0254.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original110.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0293.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original54.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0073.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original37.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0228.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original84.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0237.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original26.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/clarinet/0267.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original101.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/clarinet/0294.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original35.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0304.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original10.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0296.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original111.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0261.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original66.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0273.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original31.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0167.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original8.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0248.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original50.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0214.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original45.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0297.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original17.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0067.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original6.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0071.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original3.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0181.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original5.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original15.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0162.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original4.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0073.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original7.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0298.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original88.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0304.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original43.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0031.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original93.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original27.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0214.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original97.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0265.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original116.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0289.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original18.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0182.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original95.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0182.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original75.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0300.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original76.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0369.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original47.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0168.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original29.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/clarinet/0020.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original39.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/piccolo/0003.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original65.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0156.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original113.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0300.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original25.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/piccolo/0234.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original41.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0028.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original107.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0300.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original87.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/piccolo/0299.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original21.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/clarinet/0294.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original22.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/piccolo/0339.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original48.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0304.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original46.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0303.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original72.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original9.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0071.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original69.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0298.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original71.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0296.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original61.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/clarinet/0294.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original51.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0237.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original102.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/clarinet/0294.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original28.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/clarinet/0294.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original42.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0016.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original53.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0073.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original55.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0214.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original67.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0031.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original12.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0303.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original32.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0303.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original109.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0297.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original36.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0303.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original99.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0296.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original44.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0168.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original89.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0214.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original60.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original20.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/clarinet/0020.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original59.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0167.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original103.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0300.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original74.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original68.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original91.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0300.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original0.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original92.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0304.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original108.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original30.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/clarinet/0294.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original70.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original57.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/piccolo/0003.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original114.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0261.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original85.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0329.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original90.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0303.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original119.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0273.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original23.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0035.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original112.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0273.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original77.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original1.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0076.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original86.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0214.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original100.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0293.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original16.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0071.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original40.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0304.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original52.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0237.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original56.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/piccolo/0003.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original117.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0182.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original105.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0304.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original80.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/piccolo/0125.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original83.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0214.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original62.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0258.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original94.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0298.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original104.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0281.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original63.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0182.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original115.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original64.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/sax_tenor/0188.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original38.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0303.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original19.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0182.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original81.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0297.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original24.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original33.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0214.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original58.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/piccolo/0241.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original14.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0162.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original34.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original98.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0298.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original79.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0304.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original49.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/piccolo/0237.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original78.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0296.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original13.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original11.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0067.wav
-/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original73.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0265.wav
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original2.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav (207468.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original82.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0015.wav (278636.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original118.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0289.wav (345356.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original96.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0303.wav (235737.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original106.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/trumpet/0254.wav (330363.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original110.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0293.wav (328918.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original54.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0073.wav (340618.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original37.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0228.wav (281470.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original84.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0237.wav (311608.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original26.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/clarinet/0267.wav (276592.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original101.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/clarinet/0294.wav (300186.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original35.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0304.wav (258713.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original10.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0296.wav (251626.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original111.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0261.wav (337319.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original66.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0273.wav (309219.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original31.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0167.wav (227492.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original8.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0248.wav (256249.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original50.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0214.wav (245345.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original45.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0297.wav (248657.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original17.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0067.wav (212828.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original6.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0071.wav (316872.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original3.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0181.wav (222781.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original5.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav (281708.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original15.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0162.wav (226684.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original4.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0073.wav (297346.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original7.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0298.wav (271214.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original88.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0304.wav (282702.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original43.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0031.wav (261974.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original93.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav (249771.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original27.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0214.wav (242685.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original97.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0265.wav (260069.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original116.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0289.wav (335356.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original18.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0182.wav (223023.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original95.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0182.wav (269820.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original75.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0300.wav (257482.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original76.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0369.wav (251629.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original47.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0168.wav (315048.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original29.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/clarinet/0020.wav (269322.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original39.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/piccolo/0003.wav (285707.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original65.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0156.wav (312554.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original113.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0300.wav (299006.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original25.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/piccolo/0234.wav (267522.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original41.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0028.wav (274898.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original107.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0300.wav (286544.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original87.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/piccolo/0299.wav (264349.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original21.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/clarinet/0294.wav (323641.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original22.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/piccolo/0339.wav (231378.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original48.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0304.wav (309490.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original46.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0303.wav (252289.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original72.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav (238475.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original9.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0071.wav (316872.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original69.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0298.wav (227790.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original71.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0296.wav (254042.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original61.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/clarinet/0294.wav (298135.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original51.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0237.wav (298730.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original102.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/clarinet/0294.wav (339507.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original28.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/clarinet/0294.wav (320608.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original42.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0016.wav (296581.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original53.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0073.wav (340618.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original55.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0214.wav (213500.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original67.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0031.wav (274863.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original12.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0303.wav (236945.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original32.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0303.wav (208277.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original109.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0297.wav (270974.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original36.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0303.wav (247181.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original99.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0296.wav (269820.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original44.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0168.wav (308736.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original89.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0214.wav (252854.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original60.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav (258652.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original20.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/clarinet/0020.wav (248906.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original59.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0167.wav (264836.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original103.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0300.wav (317151.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original74.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav (212749.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original68.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav (264577.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original91.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0300.wav (238336.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original0.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav (212765.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original92.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0304.wav (262683.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original108.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav (267833.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original30.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/clarinet/0294.wav (296315.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original70.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav (256881.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original57.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/piccolo/0003.wav (205162.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original114.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0261.wav (337319.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original85.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0329.wav (255701.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original90.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0303.wav (248296.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original119.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0273.wav (302846.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original23.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0035.wav (220783.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original112.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0273.wav (307741.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original77.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav (198369.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original1.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0076.wav (266667.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original86.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0214.wav (252854.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original100.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0293.wav (339426.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original16.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0071.wav (190837.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original40.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0304.wav (273584.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original52.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0237.wav (320069.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original56.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/piccolo/0003.wav (158976.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original117.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0182.wav (257945.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original105.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0304.wav (335521.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original80.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/piccolo/0125.wav (286461.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original83.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0214.wav (252854.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original62.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0258.wav (306081.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original94.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0298.wav (244139.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original104.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0281.wav (308643.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original63.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0182.wav (312462.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original115.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav (295163.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original64.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/sax_tenor/0188.wav (235994.0)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original38.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0303.wav (270056.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original19.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0182.wav (260885.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original81.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0297.wav (298072.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original24.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav (299840.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original33.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/violin/0214.wav (259503.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original58.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/piccolo/0241.wav (252906.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original14.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0162.wav (226684.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original34.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav (300743.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original98.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0298.wav (240352.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original79.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0304.wav (276065.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original49.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/piccolo/0237.wav (280084.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original78.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0296.wav (254464.25)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original13.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0277.wav (212999.5)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original11.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0067.wav (212828.75)
+/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40/prototype-img-original73.png -> /mnt/data1/kwebst_data/data/GOOD_SOUNDS/fold1/train/cello/0265.wav (273685.0)
 done

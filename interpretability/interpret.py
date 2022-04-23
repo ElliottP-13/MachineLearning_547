@@ -16,6 +16,7 @@ from glob import glob
 dir = '/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40'
 train_img_dir = f'/mnt/data1/kwebst_data/data/GOOD_MEL_IMAGES/fold1/train/'
 
+
 def load_file(file):
     if file.endswith('.jpg'):
         i = Image.open(file)
@@ -26,7 +27,7 @@ def load_file(file):
 
 def get_dif(mat1, mat2):
     d = mat1 - mat2
-    return np.sum(np.abs(d))
+    return np.sum(np.square(d))
 
 
 def load_train_imgs():
@@ -48,6 +49,8 @@ def load_train_imgs():
 
 img_mats = []
 img_names = []
+
+
 def check_all_train_images(mat):
     global img_names, img_mats
     if len(img_mats) == 0:
@@ -61,26 +64,29 @@ def check_all_train_images(mat):
 
     idx = np.argmin(diffs)
 
-    assert f(img_mats[idx]) == diffs[idx]
-
-    return img_names[idx]
-
+    return img_names[idx], diffs[idx], idx
 
 
 if __name__ == '__main__':
-    num = 37
-
     files = glob(f"{dir}/prototype-img-original[0-9]*.png")
 
     for fi in files:
         i = Image.open(fi)
         original = np.array(i)
 
-        closest_sound = check_all_train_images(np.average(original, axis=2))
-        print(f'{fi} -> {closest_sound}')
+        closest_sound, diff, idx = check_all_train_images(np.average(original, axis=2))
+        print(f'{fi} -> {closest_sound} ({diff})')
 
         targ_file = fi.replace('img-original', 'sound').replace('png', 'wav')
         shutil.copyfile(closest_sound, targ_file)
 
+        n = fi.replace(f"{dir}/prototype-img-original", '').replace('.png', '')
+        f, ax = plt.subplots(1, 2)
+        ax[0].imshow(np.average(original, axis=2))
+        ax[0].set_title('Actual Spectrogram')
+        ax[1].imshow(img_mats[idx])
+        ax[1].set_title('Recovered Spectrogram')
+        f.suptitle(f'Prototype {n}')
+        plt.show()
+
     print('done')
-    pass
