@@ -1,5 +1,5 @@
 import os.path
-
+import torch.nn.functional as F
 import torch
 import torch.nn as nn
 import math
@@ -8,7 +8,9 @@ from tqdm import tqdm
 import torchvision.datasets as datasets
 import torchvision.transforms as transforms
 import argparse
+from torch.nn import init
 
+from networks import *
 
 parser = argparse.ArgumentParser(
     description=__doc__,
@@ -51,45 +53,11 @@ def compute_size(input_size, conv_layers):
     return w * h
 
 
-class Net(nn.Module):
-    def __init__(self, input_shape=(224, 224), num_classes=12):
-        super().__init__()
-        self.conv1 = nn.Sequential(nn.Conv2d(in_channels=3, out_channels=6, kernel_size=3, stride=1, padding=0),
-                                   nn.ReLU(),
-                                   nn.Conv2d(in_channels=6, out_channels=12, kernel_size=2, stride=1, padding=0),
-                                   nn.BatchNorm2d(12), nn.ReLU())
-        self.conv2 = nn.Sequential(nn.Conv2d(in_channels=12, out_channels=16, kernel_size=3, stride=1, padding=0),
-                                   nn.ReLU(),
-                                   nn.MaxPool2d(kernel_size=2, stride=2, padding=0))
-        self.conv3 = nn.Sequential(nn.Conv2d(in_channels=16, out_channels=20, kernel_size=5, stride=1, padding=0),
-                                   nn.ReLU(),
-                                   nn.Conv2d(in_channels=20, out_channels=32, kernel_size=2, stride=1, padding=0),
-                                   nn.BatchNorm2d(32), nn.ReLU(),
-                                   nn.MaxPool2d(kernel_size=2, stride=2, padding=0))
-
-        conv_layers = [(3, 1, 0), (2, 1, 0), (3, 1, 0), (2, 2, 0), (5, 1, 0), (2, 1, 0), (2, 2, 0)]
-
-        self.fc1 = nn.Sequential(nn.Linear(compute_size(input_shape, conv_layers) * 32, 120),
-                                 nn.Tanh())
-        self.fc2 = nn.Sequential(nn.Linear(120, num_classes),
-                                 nn.Softmax(dim=1))
-
-    def forward(self, x):
-        x = self.conv1(x)
-        x = self.conv2(x)
-        x = self.conv3(x)
-        x = torch.flatten(x, 1)  # flatten all dimensions except batch
-        x = self.fc1(x)
-        x = self.fc2(x)
-        return x
-
-
 def train(model, train_loader, val_loader, epochs=5, save_model_dir=None):
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.AdamW(model.parameters(), lr=0.5)
 
     model.to(device)
-
 
     for epoch in range(epochs):
         model.train()
@@ -119,11 +87,11 @@ def train(model, train_loader, val_loader, epochs=5, save_model_dir=None):
 
                 # print statistics
                 running_loss += loss.item()
-                tepoch.set_postfix(loss=loss.item(), accuracy=train_correct / train_total)
+                tepoch.set_postfix(loss=loss.item(), accuracy=100 * (train_correct / train_total))
 
                 if i % 100 == 499:  # log every 100
                     with open(os.path.join(save_model_dir, 'log.txt'), 'a') as f:
-                        f.write(f"Epoch {epoch} -\t Step {i} -\t Training Accuracy = {train_correct / train_total} -\t"
+                        f.write(f"Epoch {epoch} -\t Step {i} -\t Training Accuracy = {100 * (train_correct / train_total)} -\t"
                                 f" Running loss = {running_loss}\n")
 
         # Validate
@@ -141,8 +109,8 @@ def train(model, train_loader, val_loader, epochs=5, save_model_dir=None):
                 val_total += labels.size(0)
                 val_correct += (predicted == labels).sum().item()
 
-        print(f"Epoch {epoch} -\t Validation Accuracy = {val_correct / val_total} -\t"
-              f" Training Accuracy = {train_correct / train_total} -\t"
+        print(f"Epoch {epoch} -\t Validation Accuracy = {100*(val_correct / val_total)} -\t"
+              f" Training Accuracy = {100*(train_correct / train_total)} -\t"
               f" Running loss = {running_loss}")
 
         if save_model_dir is not None:
@@ -154,8 +122,8 @@ def train(model, train_loader, val_loader, epochs=5, save_model_dir=None):
                 os.remove(os.path.join(save_model_dir, f'modelstatedict_epoch{epoch-5}.model'))
 
             with open(os.path.join(save_model_dir, 'log.txt'), 'a') as f:
-                f.write(f"\n\nEpoch {epoch} -\t Validation Accuracy = {val_correct / val_total} -\t"
-                        f" Training Accuracy = {train_correct / train_total} -\t"
+                f.write(f"\n\nEpoch {epoch} -\t Validation Accuracy = {100 * (val_correct / val_total)} -\t"
+                        f" Training Accuracy = {100 * (train_correct / train_total)} -\t"
                         f" Running loss = {running_loss}\n\n")
 
 
@@ -172,28 +140,28 @@ if __name__ == '__main__':
     train_dataset = datasets.ImageFolder(
         train_dir,
         transforms.Compose([
-            transforms.Resize(size=(args.img_size, args.img_size)),
+            transforms.Resize(size=(128, args.img_size)),
             transforms.ToTensor(),
             normalize,
         ]))
 
     train_loader = torch.utils.data.DataLoader(
-        train_dataset, batch_size=args.batch, shuffle=True, pin_memory=False)
+        train_dataset, batch_size=args.batch, num_workers=12, shuffle=True, pin_memory=False)
 
     print(f'Length of training dataset: {len(train_dataset)}')
 
     test_dataset = datasets.ImageFolder(
         test_dir,
         transforms.Compose([
-            transforms.Resize(size=(args.img_size, args.img_size)),
+            transforms.Resize(size=(128, args.img_size)),
             transforms.ToTensor(),
             normalize,
         ]))
     test_loader = torch.utils.data.DataLoader(
-        test_dataset, batch_size=args.batch, shuffle=False,
+        test_dataset, batch_size=args.batch, num_workers=12, shuffle=False,
         pin_memory=False)
 
     print(f'Length of test dataset: {len(test_dataset)}')
 
-    model = Net(input_shape=(args.img_size, args.img_size), num_classes=12)
+    model = Net2(input_shape=(128, args.img_size), num_classes=12)
     train(model, train_loader, test_loader, args.epochs, save_model_dir=args.output_dir)
