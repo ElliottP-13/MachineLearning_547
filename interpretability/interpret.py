@@ -6,7 +6,6 @@ from PIL import Image
 import librosa
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.image as img
 import scipy.io.wavfile
 import soundfile
 # from p_tqdm import p_map
@@ -37,8 +36,9 @@ def load_train_imgs():
     for root, subdirectories, files in os.walk(train_img_dir):
         fs = [os.path.join(root, file) for file in files]
 
-        p = Pool(12)
-        o = p.map(load_file, fs)
+        # p = Pool(12)
+        # o = p.map(load_file, fs)
+        o = [load_file(file) for file in fs]
         if len(o) > 0:
             mats += [n[1] for n in o]
             names += [n[0].replace('GOOD_MEL_IMAGES', 'GOOD_SOUNDS').replace('jpg', 'wav') for n in o]
@@ -54,10 +54,11 @@ def check_all_train_images(mat):
         img_mats, img_names = load_train_imgs()
 
     f = functools.partial(get_dif, mat)
-    p = Pool(12)
-    diffs = p.map(f, img_mats)
+    # p = Pool(12)
+    # diffs = p.map(f, img_mats)
 
-    print(diffs)
+    diffs = [f(m) for m in img_mats]
+
     idx = np.argmin(diffs)
 
     assert f(img_mats[idx]) == diffs[idx]
@@ -69,10 +70,11 @@ def check_all_train_images(mat):
 if __name__ == '__main__':
     num = 37
 
-    files = glob(f"{dir}/prototype-img-original*.png")
+    files = glob(f"{dir}/prototype-img-original[0-9]*.png")
 
     for fi in files:
-        original = img.imread(fi)
+        i = Image.open(fi)
+        original = np.array(i)
 
         closest_sound = check_all_train_images(np.average(original, axis=2))
         print(f'{fi} -> {closest_sound}')
