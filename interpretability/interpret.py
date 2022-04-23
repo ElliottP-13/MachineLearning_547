@@ -1,4 +1,5 @@
 import os
+import shutil
 
 import torchvision.transforms
 from PIL import Image
@@ -11,9 +12,10 @@ import soundfile
 # from p_tqdm import p_map
 from multiprocessing import Pool
 import functools
+from glob import glob
 
 dir = '/mnt/data1/kwebst_data/models/saved_models/vgg19/001/img/epoch-40'
-
+train_img_dir = f'/mnt/data1/kwebst_data/data/GOOD_MEL_IMAGES/fold1/train/'
 
 def load_file(file):
     if file.endswith('.jpg'):
@@ -29,9 +31,6 @@ def get_dif(mat1, mat2):
 
 
 def load_train_imgs():
-    f = 1
-    train_img_dir = f'/mnt/data1/kwebst_data/data/GOOD_MEL_IMAGES/fold{f}/train/'
-
     mats = []
     names = []
 
@@ -42,7 +41,7 @@ def load_train_imgs():
         o = p.map(load_file, fs)
         if len(o) > 0:
             mats += [n[1] for n in o]
-            names += [n[0].replace('GOOD_MEL_IMAGES', 'GOOD_SOUNDS') for n in o]
+            names += [n[0].replace('GOOD_MEL_IMAGES', 'GOOD_SOUNDS').replace('jpg', 'wav') for n in o]
 
     return mats, names
 
@@ -58,6 +57,7 @@ def check_all_train_images(mat):
     p = Pool(12)
     diffs = p.map(f, img_mats)
 
+    print(diffs)
     idx = np.argmin(diffs)
 
     assert f(img_mats[idx]) == diffs[idx]
@@ -68,43 +68,17 @@ def check_all_train_images(mat):
 
 if __name__ == '__main__':
     num = 37
-    plt.figure()  # zoomed in prototype
-    one = img.imread(f'{dir}/prototype-img{num}.png')
-    plt.imshow(one)
-    plt.title('one')
-    plt.show()
 
-    plt.figure()  # base one
-    two = img.imread(f'{dir}/prototype-img-original{num}.png')
-    plt.imshow(two)
-    plt.title('two')
-    plt.show()
+    files = glob(f"{dir}/prototype-img-original*.png")
 
-    plt.figure()  # heatmap
-    three = img.imread(f'{dir}/prototype-img-original_with_self_act{num}.png')
-    plt.imshow(three)
-    plt.title('three')
-    plt.show()
+    for fi in files:
+        original = img.imread(fi)
 
-    npy = np.load(f'{dir}/prototype-self-act{num}.npy')
-    print(npy)  # not sure what this is
+        closest_sound = check_all_train_images(np.average(original, axis=2))
+        print(f'{fi} -> {closest_sound}')
 
-    four = three - two
-    five = np.interp(four, [np.amin(four), np.amax(four)], [0, 1])  # map power_to_dp from [-80,0] to [0, 255]
-
-    activation_map = np.average(five, axis=2)  # doesn't work
-
-    closest_sound = check_all_train_images(np.average(two, axis=2))
-    print(closest_sound)
-
-
-
-    # remap = np.interp(two, [0, 255], [-80, 0])
-    # audio = librosa.feature.inverse.mel_to_audio(remap, n_fft=2048, sr=22050, hop_length=512)
-    # scipy.io.wavfile.write(f"./prototype-{num}.wav", 22050, audio)
-    # scipy.io.wavfile.write(f"./prototype3-{num}.wav", 22050, np.transpose(audio))
-    # soundfile.write(f"./prototype4-{num}.wav", np.transpose(audio), 22050)
-    # soundfile.write(f"./prototype2-{num}.wav", audio, 22050)
+        targ_file = fi.replace('img-original', 'sound').replace('png', 'wav')
+        shutil.copyfile(closest_sound, targ_file)
 
     print('done')
     pass
