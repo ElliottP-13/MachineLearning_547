@@ -2,7 +2,7 @@ import os
 import shutil
 
 import torchvision.transforms
-from PIL import Image
+from PIL import Image, ImageOps
 import librosa
 import numpy as np
 import matplotlib.pyplot as plt
@@ -72,9 +72,10 @@ if __name__ == '__main__':
 
     for fi in files:
         i = Image.open(fi)
+        i = ImageOps.grayscale(i)
         original = np.array(i)
 
-        closest_sound, diff, idx = check_all_train_images(np.average(original, axis=2))
+        closest_sound, diff, idx = check_all_train_images(original)
         print(f'{fi} -> {closest_sound} ({diff})')
 
         targ_file = fi.replace('img-original', 'sound').replace('png', 'wav')
@@ -82,7 +83,7 @@ if __name__ == '__main__':
 
         n = fi.replace(f"{dir}/prototype-img-original", '').replace('.png', '')
         f, ax = plt.subplots(1, 2)
-        ax[0].imshow(np.average(original, axis=2))
+        ax[0].imshow(original)
         ax[0].set_title('Actual Spectrogram')
         ax[1].imshow(img_mats[idx])
         ax[1].set_title('Recovered Spectrogram')
