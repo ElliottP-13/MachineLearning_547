@@ -36,23 +36,6 @@ parser.add_argument('--epochs', type=int, help='number of epochs',
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
-def compute_size(input_size, conv_layers):
-    """
-    Computes the final output shape of a set of convolutional layers
-    @param input_size:
-    @param conv_layers:
-    @return:
-    """
-    w, h = input_size
-
-    for layer in conv_layers:
-        kernel, stride, padding = layer
-        w = math.floor((w - kernel + 2 * padding) / stride + 1)
-        h = math.floor((h - kernel + 2 * padding) / stride + 1)
-
-    return w * h
-
-
 def train(model, train_loader, val_loader, epochs=5, save_model_dir=None):
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.AdamW(model.parameters(), lr=0.5)
@@ -140,7 +123,7 @@ if __name__ == '__main__':
     train_dataset = datasets.ImageFolder(
         train_dir,
         transforms.Compose([
-            transforms.Resize(size=(128, args.img_size)),
+            transforms.Resize(size=(args.img_size, args.img_size)),
             transforms.ToTensor(),
             normalize,
         ]))
@@ -153,7 +136,7 @@ if __name__ == '__main__':
     test_dataset = datasets.ImageFolder(
         test_dir,
         transforms.Compose([
-            transforms.Resize(size=(128, args.img_size)),
+            transforms.Resize(size=(args.img_size, args.img_size)),
             transforms.ToTensor(),
             normalize,
         ]))
@@ -163,5 +146,5 @@ if __name__ == '__main__':
 
     print(f'Length of test dataset: {len(test_dataset)}')
 
-    model = Net2(input_shape=(128, args.img_size), num_classes=12)
+    model = Net4(model_name='resnet', num_classes=12)
     train(model, train_loader, test_loader, args.epochs, save_model_dir=args.output_dir)

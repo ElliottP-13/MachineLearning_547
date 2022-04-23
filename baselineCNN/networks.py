@@ -8,7 +8,25 @@ from tqdm import tqdm
 import torchvision.datasets as datasets
 import torchvision.transforms as transforms
 import argparse
+from torchvision import models
 from torch.nn import init
+
+
+def compute_size(input_size, conv_layers):
+    """
+    Computes the final output shape of a set of convolutional layers
+    @param input_size:
+    @param conv_layers:
+    @return:
+    """
+    w, h = input_size
+
+    for layer in conv_layers:
+        kernel, stride, padding = layer
+        w = math.floor((w - kernel + 2 * padding) / stride + 1)
+        h = math.floor((h - kernel + 2 * padding) / stride + 1)
+
+    return w * h
 
 
 class Net(nn.Module):
@@ -144,3 +162,97 @@ class Net2(nn.Module):
 
         # Final output
         return x
+
+
+class Net3(nn.Module):
+    def __init__(self, input_shape=(224, 224), num_classes=12):
+        super().__init__()
+        self.conv1 = nn.Sequential(nn.Conv2d(in_channels=3, out_channels=6, kernel_size=3, stride=1, padding=0),
+                                   nn.ReLU(),
+                                   nn.Conv2d(in_channels=6, out_channels=12, kernel_size=2, stride=1, padding=0),
+                                   nn.BatchNorm2d(12), nn.ReLU())
+        self.conv2 = nn.Sequential(nn.Conv2d(in_channels=12, out_channels=16, kernel_size=3, stride=1, padding=0),
+                                   nn.ReLU(),
+                                   nn.MaxPool2d(kernel_size=2, stride=2, padding=0))
+        self.conv3 = nn.Sequential(nn.Conv2d(in_channels=16, out_channels=20, kernel_size=5, stride=1, padding=0),
+                                   nn.ReLU(),
+                                   nn.Conv2d(in_channels=20, out_channels=32, kernel_size=2, stride=1, padding=0),
+                                   nn.BatchNorm2d(32), nn.ReLU(),
+                                   nn.MaxPool2d(kernel_size=2, stride=2, padding=0))
+
+        conv_layers = [(3, 1, 0), (2, 1, 0), (3, 1, 0), (2, 2, 0), (5, 1, 0), (2, 1, 0), (2, 2, 0)]
+
+        self.fc1 = nn.Sequential(nn.Linear(compute_size(input_shape, conv_layers) * 32, 120),
+                                 nn.Tanh())
+        self.fc2 = nn.Sequential(nn.Linear(120, num_classes),
+                                 nn.Softmax(dim=1))
+
+    def forward(self, x):
+        x = self.conv1(x)
+        x = self.conv2(x)
+        x = self.conv3(x)
+        x = torch.flatten(x, 1)  # flatten all dimensions except batch
+        x = self.fc1(x)
+        x = self.fc2(x)
+        return x
+
+
+class Net4(nn.Module):
+    def __init__(self, model_name, num_classes=12, use_pretrained=True):
+        """
+
+        @param model_name: resnet, alexnet, vgg, squeezenet, densenet
+        @param num_classes:
+        @param use_pretrained:
+        """
+        super().__init__()
+        # Initialize these variables which will be set in this if statement. Each of these
+        #   variables is model specific.
+        model_ft = None
+        input_size = 0
+
+        if model_name == "resnet":
+            """ Resnet50
+            """
+            model_ft = models.resnet50(pretrained=use_pretrained)
+            num_ftrs = model_ft.fc.in_features
+            model_ft.fc = nn.Linear(num_ftrs, num_classes)
+            input_size = 224
+
+        elif model_name == "alexnet":
+            """ Alexnet
+            """
+            model_ft = models.alexnet(pretrained=use_pretrained)
+            num_ftrs = model_ft.classifier[6].in_features
+            model_ft.classifier[6] = nn.Linear(num_ftrs,num_classes)
+            input_size = 224
+
+        elif model_name == "vgg":
+            """ VGG11_bn
+            """
+            model_ft = models.vgg16(pretrained=use_pretrained)
+            num_ftrs = model_ft.classifier[6].in_features
+            model_ft.classifier[6] = nn.Linear(num_ftrs,num_classes)
+            input_size = 224
+
+        elif model_name == "squeezenet":
+            """ Squeezenet
+            """
+            model_ft = models.squeezenet1_0(pretrained=use_pretrained)
+            model_ft.classifier[1] = nn.Conv2d(512, num_classes, kernel_size=(1,1), stride=(1,1))
+            model_ft.num_classes = num_classes
+            input_size = 224
+
+        elif model_name == "densenet":
+            """ Densenet
+            """
+            model_ft = models.densenet121(pretrained=use_pretrained)
+            num_ftrs = model_ft.classifier.in_features
+            model_ft.classifier = nn.Linear(num_ftrs, num_classes)
+            input_size = 224
+
+        self.model = model_ft
+
+
+    def forward(self, x):
+        return self.model(x)
